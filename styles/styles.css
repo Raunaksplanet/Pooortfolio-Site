@@ -1,0 +1,235 @@
+/* Basic Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  height: 100%;
+  width: 100%;
+}
+
+/* Body Styling */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212 !important;
+  color: #e0e0e0;
+  text-align: center;
+  line-height: 1.6;
+}
+
+/* Header Styling */
+header {
+  padding: 30px;
+  background-color: #1f1f1f;
+  border-bottom: 2px solid #7eda4f;
+  position: relative;
+  overflow: hidden;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.header h1 {
+  font-size: 3rem;
+  color: #7eda4f;
+}
+
+.header p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+  color: #a0a0a0;
+}
+
+nav a {
+  margin: 0 15px;
+  color: #7eda4f;
+  text-decoration: none;
+  font-weight: bold;
+  transition: color 0.3s ease;
+  z-index: 10;
+  text-align: center;
+}
+
+nav a:hover {
+  color: #0ea9c3;
+}
+
+/* Section Styling */
+section {
+  min-height: 100%;
+}
+
+#about {
+  margin: 40px auto;
+  max-width: 800px;
+  padding: 20px;
+  color: white;
+  background-color: #1f1f1f;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  /* Adjust as needed */
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #fff;
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+.social-icon:hover {
+  color: #1da1f2;
+  /* Optional hover color for Twitter blue */
+}
+
+
+/* Heading Styles */
+h2 {
+  color: #0ea9c3 !important;
+  font-size: 2rem;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+/* Project and Contact Styling */
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+ul li {
+  margin: 10px 0;
+  font-size: 1.1rem;
+}
+
+a {
+  color: #7eda4f;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+a:hover {
+  color: #0ea9c3;
+}
+
+.cards {
+  margin: 2em 1em;
+  display: grid;
+  grid-template-columns: repeat(3, 28em);
+  gap: 2em;
+  justify-content: center;
+}
+
+.cards .content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.content h5 {
+  font-size: 1.9em;
+}
+
+.content p {
+  font-size: 1.1em;
+}
+
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  /* Adjust as needed */
+  color: #fff;
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  color: #fff;
+  /* Default color for icons */
+  margin: 0 10px;
+  font-size: 20px;
+  text-decoration: none;
+}
+
+
+
+/* Show unique colors on hover */
+.social-icon:hover .fa-linkedin {
+  color: #0077b5;
+}
+
+/* LinkedIn blue */
+.social-icon:hover .fa-github {
+  color: #333;
+}
+
+/* GitHub black */
+.social-icon:hover .fa-twitter {
+  color: #1da1f2;
+}
+
+/* Twitter blue */
+.social-icon:hover .fa-medium {
+  color: #00ab6c;
+}
+
+/* Medium green */
+
+
+/* Footer Styling */
+footer {
+  padding: 20px;
+  background-color: #1f1f1f;
+  color: #a0a0a0;
+  font-size: 0.9rem;
+  border-top: 2px solid #7eda4f;
+  position: relative;
+  overflow: hidden;
+  text-align: center;
+}
+
+/* Extra Styles for Cool Effects */
+header:before,
+footer:before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 200%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+  animation: shimmer 5s linear infinite;
+  /* Extended to 5s for smoother, continuous effect */
+}
+
+@keyframes shimmer {
+  0% {
+    transform: translateX(-100%);
+  }
+
+  100% {
+    transform: translateX(100%);
+  }
+}
